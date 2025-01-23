@@ -3,11 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egyszerű HTML oldal</title>
+    <title>Portfólió</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .year-section {
+            margin-bottom: 30px;
+        }
+        .year-section h2 {
+            color: #333;
+        }
+        .sub-section {
+            margin-top: 10px;
+        }
+        .sub-section a {
+            display: block;
+            margin: 5px 0;
+            color: #007BFF;
+        }
+        .sub-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Üdvözöllek az oldalon!</h1>
-     <img src="dumbo.jpg">
-    <p>Ez egy egyszerű HTML kód példa.</p>
+    <header>
+        <h1>Portfólió</h1>
+    </header>
+    <nav>
+        <a href="#11">11. évfolyam</a>
+        <a href="#12">12. évfolyam</a>
+        <a href="#13">13. évfolyam</a>
+    </nav>
+    <div class="container">
+        <section id="11" class="year-section">
+            <h2>11. évfolyam</h2>
+            <div class="sub-section">
+                <a href="#11A">11.A rész</a>
+                <a href="#11B">11.B rész</a>
+            </div>
+        </section>
+        
+        <section id="12" class="year-section">
+            <h2>12. évfolyam</h2>
+            <div class="sub-section">
+                <a href="#12A">12.A rész</a>
+                <a href="#12B">12.B rész</a>
+            </div>
+        </section>
+        
+        <section id="13" class="year-section">
+            <h2>13. évfolyam</h2>
+            <div class="sub-section">
+                <a href="#13A">13.A rész</a>
+                <a href="#13B">13.B rész</a>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Az egyes részletek tartalma -->
+    <section id="11A" class="container">
+        <h2>11.A rész</h2>
+        <p>Itt jelennek meg a 11.A évfolyam anyagai.</p>
+    </section>
+    
+    <section id="11B" class="container">
+        <h2>11.B rész</h2>
+        <p>Itt jelennek meg a 11.B évfolyam anyagai.</p>
+    </section>
+    
+    <section id="12A" class="container">
+        <h2>12.A rész</h2>
+        <p>Itt jelennek meg a 12.A évfolyam anyagai.</p>
+    </section>
+    
+    <section id="12B" class="container">
+        <h2>12.B rész</h2>
+        <p>Itt jelennek meg a 12.B évfolyam anyagai.</p>
+    </section>
+    
+    <section id="13A" class="container">
+        <h2>13.A rész</h2>
+        <p>Itt jelennek meg a 13.A évfolyam anyagai.</p>
+    </section>
+    
+    <section id="13B" class="container">
+        <h2>13.B rész</h2>
+        <p>Itt jelennek meg a 13.B évfolyam anyagai.</p>
+    </section>
 </body>
 </html>
+
